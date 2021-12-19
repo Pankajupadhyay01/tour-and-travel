@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buybango</title>
+</head>
+
+<body>
+
+    <center>
+        <div class="nav">
+            <ul>
+                <center>
+                    <li><a href="pankaj.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Rating</a></li>
+                    <li><a href="#">Deal Of The Day</a></li>
+                    <li><a href="#">Premium</a></li>
+                  <input type="text" class="search" placeholder="search here">             </center>
+
+            </ul>
+
+        </div><br>
+        <div class="img"><img src="main.jpg" alt="" class="src"></div>
+
+
+
+        <button id="myBtn" class="btn"><b>book a tour</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+               <form action="pankaj.html" method="GET">
+              
+               <input type="text" class="name" placeholder="Enter Name">
+               <input type="email" class="name" placeholder="Enter your mail">
+               <input type="phone" class="name" placeholder="Enter phone number">
+
+               <input type="Adress" class="name" placeholder="Enter Adress">
+               <select name="tour" id="tour">
+                   <option value="Select tour">Select Tour</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Haridwar">Haridwar</option>
+                <option value="Masoori">Masoori</option>
+                <option value="Ladakh">Ladakh</option>
+               </select>
+               <button class="submit" id="submit" > Submit</button>
+
+               </form>
+            </div>
+
+        </div> 
+      <hr>   <h1>most visited area</h1>
+
+        <div class="container">
+            <img src="IMG.jpg " alt="img" class="image" style="width: 50%;">
+            <div class="overlay">
+              <div class="text"> 
+                   <form action="form.html"> 
+                       <button class="book" id="book" > Book Now</button>
+                </form>
+              </div>
+            </div>
+          </div><br>
+       <div onmouseover="myMove()" id ="animate"><img src="bus .png" alt="" >
+             
+          </div><br> 
+          
+ 
+          <br><br><br> <br><section class="services" id="services">
+
+            <h1 class="heading">
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+        
+            
+        </section>
+ <script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+ btn.onclick = function () {
+    modal.style.display = "block";
+}
+span.onclick = function () {
+    modal.style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+ 
+</script>
+
+</body> 
+
+</html>
